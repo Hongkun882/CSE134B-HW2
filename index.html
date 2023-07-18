@@ -1,102 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio Site</title>
     <style>
-        img{
-            height: 100px;
-        }
+      img {
+        height: 100px;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    
+  <body>
     <nav><a href="#">Contact</a></nav>
 
-    <header>
-        This is the header of this page
-    </header>
+    <header>This is the header of this page</header>
     <main>
-        <h1>HomePage MY</h1>
-        <picture>
-            <source srcset="other_picture.png" media="">
-            <img src="picture.png" alt="The picture of myself">
-        </picture>
-        
-        
-        <section>
-            <h2>Introduction</h2>
-            <p>Lorem, ipsum dolor <strong>sit amet consectetur </strong>adipisicing elit. Nam soluta iure impedit tenetur adipisci qui quaerat quae vitae saepe facere! Commodi <em>laborum a ipsa possimus amet</em>, excepturi praesentium nostrum assumenda.</p>
-            
-            <aside>
-                <p>I put this aside</p>
-            </aside>
-            <hr>
-            <p>Lorem <span>ipsum dolor</span> sit, amet consectetur adipisicing elit. Maiores placeat cupiditate <br> temporibus eos dignissimos quo aut <i>autem officia iusto asperiores.</i> Placeat impedit totam illum sed at minus unde, vero doloremque?</p>
-            
-        </section>
-        
-        <div>
-            <h2>Programming Language</h2>
-            <ul>
-                <li>C++</li>
-                <li>Python</li>
-                <li>Java</li>
-            </ul>
-            <h3>Thoughts</h3>
-            <ol>
-                <li>I love JS</li>
-                <li>I hate CSS</li>
-                <li>I hove Python</li>
-            </ol>
-            <p>I like using <code>Console.log()</code> to debug</p>
-            <pre>
+      <h1>HomePage</h1>
+      <picture>
+        <source srcset="other_picture.png" media="" />
+        <img src="picture.png" alt="The picture of myself" />
+      </picture>
+
+      <section>
+        <h2>Introduction</h2>
+        <p>
+          Lorem, ipsum dolor <strong>sit amet consectetur </strong>adipisicing
+          elit. Nam soluta iure impedit tenetur adipisci qui quaerat quae vitae
+          saepe facere! Commodi <em>laborum a ipsa possimus amet</em>, excepturi
+          praesentium nostrum assumenda.
+        </p>
+
+        <aside>
+          <p>I put this aside</p>
+        </aside>
+        <hr />
+        <p>
+          Lorem <span>ipsum dolor</span> sit, amet consectetur adipisicing elit.
+          Maiores placeat cupiditate <br />
+          temporibus eos dignissimos quo aut
+          <i>autem officia iusto asperiores.</i> Placeat impedit totam illum sed
+          at minus unde, vero doloremque?
+        </p>
+      </section>
+
+      <div>
+        <h2>Programming Language</h2>
+        <ul>
+          <li>C++</li>
+          <li>Python</li>
+          <li>Java</li>
+        </ul>
+        <h3>Thoughts</h3>
+        <ol>
+          <li>I love JS</li>
+          <li>I hate CSS</li>
+          <li>I hove Python</li>
+        </ol>
+        <p>I like using <code>Console.log()</code> to debug</p>
+        <pre>
                 AAAAAAA
                   bbb
                 cccccccc
-            </pre>
-            <iframe src="https://www.youtube.com/embed/Rx2inwUj_F0" title="Goolge"></iframe>
-            <hr>
-            <audio controls>
-                <source src="voice.m4a">
-                Something wrong
-            </audio>
+            </pre
+        >
+        <iframe
+          src="https://www.youtube.com/embed/Rx2inwUj_F0"
+          title="Goolge"
+        ></iframe>
+        <hr />
+        <audio controls>
+          <source src="voice.m4a" />
+          Something wrong
+        </audio>
 
-            <video controls>
+        <video controls>
+          <source src="dummy_video.mov" />
+          Something wrong
+        </video>
 
-                <source src="dummy_video.mov">
-                Something wrong
-            </video>
+        <canvas> Something special </canvas>
+      </div>
 
+      <section>
+        <h2>Tell me what you think?</h2>
+        <form action="#">
+          <h3>How is your day?</h3>
+          <input type="text" list="greeting" />
+          <datalist id="greeting">
+            <option value="good">good</option>
+            <option value="bad">bad</option>
+          </datalist>
 
-            <canvas>
-                Something special
-            </canvas>
-        </div>
-        
-        <section>
-            <h2>Tell me what you think?</h2>
-            <form action="">
+          <label for="name">name</label>
+          <input type="text" id="name" />
 
-                <label for="name">name</label>
-                <input type="text" id="name">
-            </form>
-        </section>
+          <br />
+
+          <label for="school">School</label>
+          <select name="school" id="school">
+            <optgroup label="California">
+              <option value="UCSD">UCSD</option>
+              <option value="UCSD">UCSC</option>
+              <option value="UCSD">UCSB</option>
+            </optgroup>
+            <optgroup label="Lvy League">
+              <option value="Harvard">Harvard</option>
+              <option value="Brown">Brown</option>
+              <option value="Yale">Yale</option>
+            </optgroup>
+          </select>
+
+          <fieldset>
+            <legend>Choose your review</legend>
+            <input type="radio" id="1" name="review" value="1" />
+            <label for="1">1</label><br />
+
+            <input type="radio" id="2" name="review" value="2" />
+            <label for="2">2</label><br />
+
+            <input type="radio" id="3" name="review" value="3" />
+            <label for="3">3</label>
+          </fieldset>
+
+          <label for="feedback">Any feedback?</label>
+          <br />
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <button>submit</button>
+        </form>
+      </section>
+
+      <details>
+        <summary>Honest Opinion</summary>
+        Please Hire me!!!!
+      </details>
+
+      <template> This is the hidden text </template>
+      <h3>table</h3>
+      <table>
+        <caption>
+          Student
+        </caption>
+        <colgroup>
+          
+          <col span="1" class="name" />
+          <col span="1" class="ssn"/>
+          <col span="1" class="grade"/>
+          <col span="1" class="Age"/>
+        </colgroup>
+        <tr>
+          <th>name</th>
+          <th>SSN</th>
+          <th>Grade</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Hong</td>
+          <td>123</td>
+          <td>A</td>
+          <td>10</td>
+        </tr>
+      </table>
+
+      <figure>
+        <img src="picture.png"
+             alt="AI">
+        <figcaption>AI generated</figcaption>
+    </figure>
+
     </main>
 
-    <footer>
-
-        This is the footer of this page
-    </footer>
+    <footer>This is the footer of this page</footer>
 
     <script>
-        const canvas = document.querySelector("canvas");
-        const context = canvas.getContext('2d');
-        context.fillRect(20, 13, 100, 100);
+      const canvas = document.querySelector("canvas");
+      const context = canvas.getContext("2d");
+      context.fillRect(20, 13, 100, 100);
     </script>
-    
-</body>
-
+  </body>
 </html>
