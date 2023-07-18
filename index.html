@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Site</title>
+    <style>
+        img{
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <nav><a href="#">Contact</a></nav>
+
+    <header>
+        This is the header of this page
+    </header>
+    <main>
+        <h1>HomePage</h1>
+        <picture>
+            <source srcset="other_picture.png" media="">
+            <img src="picture.png" alt="The picture of myself">
+        </picture>
+        
+        
+        <section>
+            <h2>Introduction</h2>
+            <p>Lorem, ipsum dolor <strong>sit amet consectetur </strong>adipisicing elit. Nam soluta iure impedit tenetur adipisci qui quaerat quae vitae saepe facere! Commodi <em>laborum a ipsa possimus amet</em>, excepturi praesentium nostrum assumenda.</p>
+            
+            <aside>
+                <p>I put this aside</p>
+            </aside>
+            <hr>
+            <p>Lorem <span>ipsum dolor</span> sit, amet consectetur adipisicing elit. Maiores placeat cupiditate <br> temporibus eos dignissimos quo aut <i>autem officia iusto asperiores.</i> Placeat impedit totam illum sed at minus unde, vero doloremque?</p>
+            
+        </section>
+        
+        <div>
+            <h2>Programming Language</h2>
+            <ul>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+            <h3>Thoughts</h3>
+            <ol>
+                <li>I love JS</li>
+                <li>I hate CSS</li>
+                <li>I hove Python</li>
+            </ol>
+            <p>I like using <code>Console.log()</code> to debug</p>
+            <pre>
+                AAAAAAA
+                  bbb
+                cccccccc
+            </pre>
+            <iframe src="https://www.youtube.com/embed/Rx2inwUj_F0" title="Goolge"></iframe>
+            <hr>
+            <audio controls>
+                <source src="voice.m4a">
+                Something wrong
+            </audio>
+
+            <video controls>
+
+                <source src="dummy_video.mov">
+                Something wrong
+            </video>
+
+
+            <canvas>
+                Something special
+            </canvas>
+        </div>
+        
+        <section>
+            <h2>Tell me what you think?</h2>
+            <form action="">
+
+                <label for="name">name</label>
+                <input type="text" id="name">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        This is the footer of this page
+    </footer>
+
+    <script>
+        const canvas = document.querySelector("canvas");
+        const context = canvas.getContext('2d');
+        context.fillRect(20, 13, 100, 100);
+    </script>
+    
+</body>
+
+</html>
